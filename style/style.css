@@ -1,0 +1,58 @@
+/* Lucas Sanches Coelho | RA 10410045
+Clovis Julião Arroyo Neto | RA 10395595 
+*/
+
+*{
+    #firstDiv {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #images {
+        background-color: rgba(250, 250, 250, 0.5);
+        width: 500px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #images > img{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media print {
+    body{
+        background-color: rgb(4, 240, 240);
+    }
+    
+}
+
+
+
+
+
+
+@media (min-width: 0px) and (max-width: 600px) {
+    /*Celular*/
+    body{
+        background-color: blue;
+    }
+    .pc, .tablet {display: none;}
+
+}
+
+@media (min-width: 601px) and (max-width: 1366px) {
+    body{
+        background-color: purple;
+    }
+    .phone, .pc {display: none;}
+}
+
+@media (min-width: 1367px) and (max-width: 4200px) {
+    body{
+        background-color: red;
+    }
+    .phone, .tablet {display: none;}
+}
+
